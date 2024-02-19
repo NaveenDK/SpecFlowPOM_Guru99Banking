@@ -1,7 +1,4 @@
 ﻿using Guru99.Drivers;
-using OpenQA.Selenium;
-
-using TechTalk.SpecFlow;
 
 namespace Guru99.Hooks
 {
@@ -11,10 +8,7 @@ namespace Guru99.Hooks
 
         private readonly ScenarioContext _scenarioContext;
 
-        //public HookInitialization(ScenarioContext scenarioContext)
-        //{
-        //    _scenarioContext = scenarioContext;
-        //}
+ 
 
         public HookInitialization(ScenarioContext scenarioContext) => _scenarioContext = scenarioContext;
 
@@ -29,7 +23,7 @@ namespace Guru99.Hooks
         [AfterScenario]
         public void AfterScenario()
         {
-            //TODO: implement logic that has to run after executing each scenario
+          
             _scenarioContext.Get<IWebDriver>("SeleniumDriver").Quit();
 
         }

@@ -1,12 +1,5 @@
-﻿using Dynamitey.DynamicObjects;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.PageObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿ using SeleniumExtras.PageObjects;
+ 
 
 namespace Guru99.PageObjects
 {

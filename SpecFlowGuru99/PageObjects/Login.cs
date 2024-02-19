@@ -1,12 +1,5 @@
-﻿using Dynamitey.DynamicObjects;
-using Guru99.PageObjects;
-using OpenQA.Selenium;
+﻿using Guru99.PageObjects;
 using SeleniumExtras.PageObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpecFlowGuru99.PageObjects
 {
@@ -48,10 +41,8 @@ namespace SpecFlowGuru99.PageObjects
             signInButton.Click();
 
         }
-        public IWebElement getUserName()
-        {
-            return username;
-        }
+        public IWebElement getUserName()=> username;
+        
 
     }
 }
